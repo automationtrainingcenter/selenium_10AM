@@ -53,7 +53,7 @@ public class LocatingTechniques {
 		WebElement mobileNumber = driver.findElement(By.cssSelector("input[aria-label='Mobile number or email address']"));
 		
 		// xpath -> By.xpath() locates element using xpath(XML path) of the element
-		// syntax to xpath is //tagname[@attName = 'attValue']
+		// syntax to xpath is //tagname[@attName = 'attValue' ]
 		WebElement password = driver.findElement(By.xpath("//input[@autocomplete='new-password']"));
 
 		// className -> By.className() locates element using class name the of the
