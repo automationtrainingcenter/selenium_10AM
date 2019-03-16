@@ -34,7 +34,6 @@ public class LocatingTechniques {
 		// id -> By.id() locates element uniquely using id attribute of the element
 //		By id = By.id("email");
 //		WebElement username = driver.findElement(id);
-
 		WebElement username = driver.findElement(By.id("email"));
 
 		// name -> By.name() locates element uniquely using name attribute of the
@@ -43,15 +42,16 @@ public class LocatingTechniques {
 
 		// linkText -> By.linkText() locates links(anchor tags) with text of the link
 		WebElement forgottenAccount = driver.findElement(By.linkText("Forgotten account?"));
-		
+
 		// partialLinkText -> By.partialLinkText() locates links(anchor tags) with
 		// partial text of the link
 		WebElement yDateOfBirth = driver.findElement(By.partialLinkText("date of birth"));
 
 		// cssSelector -> By.cssSelector() locates element using css selector of the
 		// element
-		WebElement mobileNumber = driver.findElement(By.cssSelector("input[aria-label='Mobile number or email address']"));
-		
+		WebElement mobileNumber = driver
+				.findElement(By.cssSelector("input[aria-label='Mobile number or email address']"));
+
 		// xpath -> By.xpath() locates element using xpath(XML path) of the element
 		// syntax to xpath is //tagname[@attName = 'attValue' ]
 		WebElement password = driver.findElement(By.xpath("//input[@autocomplete='new-password']"));
@@ -59,12 +59,12 @@ public class LocatingTechniques {
 		// className -> By.className() locates element using class name the of the
 		// element
 		List<WebElement> inputFileds = driver.findElements(By.className("inputtext"));
-		System.out.println("number of input text fields are "+inputFileds.size());
+		System.out.println("number of input text fields are " + inputFileds.size());
 
 		// tagName -> By.tagName() locates element by it's tag name
 		List<WebElement> links = driver.findElements(By.tagName("a"));
-		System.out.println("number of links in the page are "+links.size());
-		
+		System.out.println("number of links in the page are " + links.size());
+
 		/*
 		 * There is a high probability of locating multiple elements by using class name
 		 * and tag name
