@@ -14,7 +14,6 @@ public class WebElementMethods {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.facebook.com");
 		driver.manage().window().maximize();
-
 		/*
 		 * A web page is a combination of many different HTML elements, like images,
 		 * buttons, tables, links, labels, forms, edit boxes, paragraphs, dropdown boxes
