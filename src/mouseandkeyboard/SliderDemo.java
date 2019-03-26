@@ -18,7 +18,7 @@ public class SliderDemo extends BrowserHelper{
 		//find slider width
 		int width = slider.getSize().getWidth();
 		System.out.println(width);
-		int move = (int)(width * 0.06);
+		int move = (int)(width * 0.6);
 		//create Actions class object
 		Actions actions = new Actions(driver);
 		actions.dragAndDropBy(sliderHead, move, 0).build().perform();
