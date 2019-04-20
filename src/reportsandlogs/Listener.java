@@ -10,13 +10,7 @@ import org.openqa.selenium.support.events.WebDriverEventListener;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class Listener implements WebDriverEventListener {
-
-	ExtentTest test;
-
-	public Listener(ExtentTest test) {
-		this.test = test;
-	}
+public class Listener extends BaseClass implements WebDriverEventListener {
 
 	@Override
 	public void afterAlertAccept(WebDriver arg0) {
@@ -109,7 +103,7 @@ public class Listener implements WebDriverEventListener {
 
 	@Override
 	public void beforeClickOn(WebElement arg0, WebDriver arg1) {
-		test.log(LogStatus.INFO, "clicking on an element");
+		test.log(LogStatus.INFO, "clicking on that element");
 	}
 
 	@Override
